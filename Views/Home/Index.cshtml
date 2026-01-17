@@ -1,0 +1,239 @@
+﻿
+
+@model IEnumerable<Item>
+
+@{
+    ViewData["Titles"] = "Ana Sayfa";
+
+}
+<!-- Masthead-->
+<div class="bg-dark text-secondary     text-center hero">
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold text-white">Shopping Hexora'ya Hoş Geldiniz!</h1>
+        <div class="  mx-au">
+            <p class="fs-5 mb-4" style="color:white">Hadi başlayalım!</p>
+            <div ="d-grid gap-2 d-classsm-flex justify-content-sm-center">
+                      <div class="pb-3">
+                    <a class="btn btn-close-white btn-lg text-black " style="border-radius:25px" href="#services">Daha Fazlasına Göz Atmak İster Misin?</a>
+                      </div>
+                      <div>
+                    <a class="btn btn-close-white btn-lg text-capitalize" style="border-radius:25px" asp-controller="Home" asp-action="Products">Şimdi Alışveriş Yap</a>
+                      </div>
+                </div>   
+        </div>
+    </div>
+</div>
+ <!-- Services-->
+<section class="page-section bg-light" id="services">
+            <div class="container">
+                <div class="text-center">
+            <h2 class="section-heading text-uppercase">Hizmetlerimiz</h2>
+            <h3 class="section-subheading text-muted">Müşterilerimize modern ve güvenilir bir alışveriş deneyimi sunuyoruz.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                <h4 class="my-3">En İyi Fiyat Garantisi</h4>
+                <p class="text-muted">Sektördeki en rekabetçi fiyatlarla kaliteyi herkes için ulaşılabilir kılıyoruz.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x" >
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                <h4 class="my-3">7/24 Teknik Destek </h4>
+                <p class="text-muted">Satın alma öncesi ve sonrası tüm süreçlerde uzman ekibimizle yanınızdayız.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                <h4 class="my-3">Hızlı ve Güvenli Teslimat</h4>
+                <p class="text-muted">Siparişlerinizi en yüksek güvenlik standartlarıyla, Türkiye'nin her yerine hızla ulaştırıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- About-->
+<section class="page-section bg-light" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Hakkımızda</h2>
+            <h3 class="section-subheading text-muted">Teknolojiyi inovasyonla birleştirerek, geleceğin güvenli ve kullanıcı odaklı e-ticaret altyapılarını bugünden inşa ediyoruz.</h3>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2021-2022 (Başlangıç)</h4>
+                        <h4 class="subheading">Mütevazı Başlangıcımız: Temellerin Atılması</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Bilgisayar mühendisliği disipliniyle, teknolojiyi insan hayatını kolaylaştırmak için kullanma kararıyla yola çıktık. İlk projelerimizde veri yapıları ve algoritma optimizasyonu üzerine yoğunlaşarak güçlü bir teknik temel oluşturduk.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2023-2024 (Gelişim)</h4>
+                        <h4 class="subheading">
+                            Şirketimizin Kuruluşu: Yazılım Mimarisinde Uzmanlaşma ve Modern Çözümler
+                        </h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">E-ticaret ekosistemini daha güvenli ve kullanıcı dostu hale getirmek için .NET teknolojileri ve SOLID prensipleri üzerinde uzmanlaştık. Veri güvenliği ve performans odaklı mikro servis yaklaşımlarını sistemlerimize entegre ettik.</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2025 (Uzmanlık):</h4>
+                        <h4 class="subheading">
+                            Tam Hizmete Geçiş: Yapay Zeka Entegrasyonu ve Akıllı Alışveriş Deneyimi
+                        </h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Makine öğrenmesi ve derin öğrenme algoritmalarını kullanarak kullanıcı alışkanlıklarını analiz eden, kişiselleştirilmiş ürün önerileri sunan akıllı sistemler geliştirdik. Bibliyoterapi gibi platformlarla yazılımın sosyal fayda gücünü kanıtladık.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2026 (Gelecek)</h4>
+                        <h4 class="subheading">Sürdürülebilir E-Ticaret</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Hedefimiz, Türkiye'den dünyaya açılan, yüksek performanslı ve güvenilir e-ticaret altyapıları sunan bir teknoloji öncüsü olmaktır. Mühendislik etiğinden ödün vermeden, geleceğin dijital dünyasını bugünden inşa ediyoruz.</p></div>
+                </div>
+            </li>
+             
+        </ul>
+    </div>
+</section>
+
+<!-- Team-->
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Muhteşem Ekibimiz</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="team-member team-img">
+                    <img  class="mx-auto   rounded-circle"style="width:300px" src="assets/img/team/1.jpeg" alt="..." />
+                    <h4 class="mt-3">Arda Yılmaz</h4>
+                    <p class="text-muted">UI/UX Tasarımcı</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Arda Yılmaz Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Arda Yılmaz Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Arda Yılmaz LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" style="width:300px" src="assets/img/team/2.jpeg" alt="..." />
+                    <h4 class="mt-3">Nursemin Yıldırım</h4>
+                    <p class="text-muted">Kurucu & Baş Geliştirici</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Nursemin Yıldırım Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Nursemin Yıldırım Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Nursemin Yıldırım LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" style="width:300px" src="assets/img/team/3.png" alt="..." />
+                    <h4 class="mt-3">Mustafa Demirci</h4>
+                    <p class="text-muted">Veri Bilimci & Analist</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Mustafa Demirci Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Mustafa Demirci Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Mustafa Demirci LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Hedefimiz, sadece bir yazılım geliştirmek değil; kullanıcılarımızın dijital dünyadaki deneyimlerini en güvenli ve verimli hale getirecek mühendislik çözümleri sunmaktır.</p></div>
+        </div>
+    </div>
+</section>
+ 
+<!-- Clients-->
+<div class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+   
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Bizimle İletişime Geçin</h2>
+            <h3 class="section-subheading text-muted">Sorularınız, iş birliği teklifleriniz veya fikirleriniz için bize yazabilirsiniz.</h3>
+        </div>
+        
+        <!-- to get an API token!-->
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- Name input-->
+                        <input class="form-control" id="name" type="text" placeholder="**Adınız ***" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="name:required">İsim gereklidir...</div>
+                    </div>
+                    <div class="form-group">
+                        <!-- Email address input-->
+                        <input class="form-control" id="email" type="email" placeholder="**E-Posta Adresiniz ***" data-sb-validations="required,email" />
+                        <div class="invalid-feedback" data-sb-feedback="email:required">Email adresi gereklidir...</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email geçerli değil.</div>
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <!-- Phone number input-->
+                        <input class="form-control" id="phone" type="tel" placeholder="**Telefon Numaranız ***" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">Telefon Numarası gereklidir...</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <!-- Message input-->
+                        <textarea class="form-control" id="message" placeholder="**Mesajınız ***" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Mesaj Gereklidir...</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Submit success message-->
+            <!---->
+            <!-- This is what your users will see when the form-->
+            <!-- has successfully submitted-->
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center text-white mb-3">
+                    <div class="fw-bolder">Mesajınız başarıyla iletildi! En kısa sürede size dönüş yapacağız.</div>
+                    To activate this form, sign up at
+                    <br />
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                </div>
+            </div>
+             
+            <!-- Submit Button-->
+            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Mesaj Gönderin</button></div>
+        </form>
+    </div>
+</section>
+ 
